@@ -2,11 +2,9 @@ body {
     background-color: #C8D6D5;
     font-family: Arial, sans-serif;
     color: #161313;
-    color: white;
 }
 /* Todo lo relacionado con el primer cuadro de la pagina principal*/
 .titulo{
-    font-family: 'Courier New', sans-serif;
     width: 100%;
     height: 200px;
     background-color: rgb(10, 61, 30);
@@ -16,12 +14,6 @@ body {
     font-size: 20px;
     border-radius: 5px;
     
-}
-h1 {
-    margin-bottom: 100px;}
-
-h4 {
-    margin-top: 100px; 
 }
 h1, h4 {
     margin: 0; /* Eliminar completamente los márgenes */
@@ -50,6 +42,7 @@ h3{
     text-align: center;
     border-radius: 5px;
     margin: 0px;
+    position: absolute;
 
 }
 button{
@@ -137,7 +130,7 @@ button{
 #boxGato {
     background-image: linear-gradient(to right, rgb(33, 114, 87), rgb(89, 228, 198));
     color: rgb(14, 12, 12);
-    position: relative; /* Enable relative positioning for the container */
+    position: static;
     max-width: 93%;
 }
 .cat-head {
@@ -337,10 +330,9 @@ button{
     top: 134px;
     left: 109px;}
 
-    .cuadroGato{
-        border-radius: 20px;
-        border: 1px solid #000;
-        position: absolute;
-        margin-left: 50%;
-        margin-top: 0%;
+.cuadroGato {
+        border: 50px solid #000;
+        position: static;
+        margin-left: 5%;
+        padding: 2px;
     }
