@@ -121,18 +121,13 @@ button{
     height: 200px; /* Height of the box */
     padding: 0px; /* Padding inside the box */
     box-sizing: border-box; /* Include padding and border in the box's total width and height */
-    margin-left: -10%;
+    margin-left: 5%;
     margin-top: 0%;
     position: relative;
+    border: 1px solid #000;
 }
 
 /* Gato */
-#boxGato {
-    background-image: linear-gradient(to right, rgb(33, 114, 87), rgb(89, 228, 198));
-    color: rgb(14, 12, 12);
-    position: static;
-    max-width: 93%;
-}
 .cat-head {
     position: absolute;
     right: 0;
@@ -145,6 +140,7 @@ button{
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
+    text-align: center;
   }
   
   .cat-left-ear {
@@ -326,13 +322,15 @@ button{
   }
   
   .cat-whisker-right-bottom {
+    margin: auto;
     position: absolute;
     top: 134px;
     left: 109px;}
 
 .cuadroGato {
-        border: 50px solid #000;
+        margin: auto;
+        border: 10px solid #000;
         position: static;
-        margin-left: 5%;
-        padding: 2px;
+        margin-left: 50%;
+        padding: 0px;
     }
