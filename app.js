@@ -1,6 +1,6 @@
 // Función para limpiar el contenido del textarea
 function clearTextarea() {
-    document.getElementById('myTextarea').value = '';
+    document.getElementById('textoOriginal').value = '';
 }
 
 function encriptarTexto() {
@@ -37,28 +37,11 @@ function encriptarTexto() {
 
 function desencriptarTexto() {
     var textoEncriptado = document.getElementById("textoOriginal").value;
-    var textoDesencriptado = "";
-
-    // Recorre el texto encriptado y realiza la desencriptación
-    for (var i = 0; i < textoEncriptado.length; i += 4) {
-        var subcadena = textoEncriptado.substr(i, 4);
-        switch (subcadena) {
-            case 'ente':
-                textoDesencriptado += 'e';
-                break;
-            case 'imes':
-                textoDesencriptado += 'i';
-                break;
-            case 'ober':
-                textoDesencriptado += 'o';
-                break;
-            case 'ufat':
-                textoDesencriptado += 'u';
-                break;
-            default:
-                textoDesencriptado += subcadena;
-        }
-    }
+    var textoDesencriptado = textoEncriptado.replace(/enter/g, 'e')
+                                            .replace(/imes/g, 'i')
+                                            .replace(/ai/g, 'a')
+                                            .replace(/ober/g, 'o')
+                                            .replace(/ufat/g, 'u');
 
     // Muestra el texto desencriptado en el segundo cuadro de texto
     document.getElementById("textoResultado").value = textoDesencriptado;
