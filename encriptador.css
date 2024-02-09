@@ -1,0 +1,104 @@
+body {
+    background-color: rgb(62, 128, 128);
+    font-family: Arial, sans-serif;
+    color: #161313;
+    color: white;
+}
+
+body h2{
+    margin-top: -1%;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input-container input {
+    margin-bottom: 10px; /* Agrega un margen entre la entrada de texto y el label */
+}
+main {
+    padding-top: 10%;
+    width: 940px;
+    margin: 0 auto;
+}
+body h3{
+    margin-top: -10%;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    margin-bottom: 0%;
+    margin-top: 90%;
+    text-align: center;
+}
+/* Flecha*/
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    padding: 3%;
+}
+.arrow-down {
+    align-items: center;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 80px solid white; /* Change to a contrasting color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow-down::before {
+    content: "";
+    position: absolute;
+    top: -20px; /* Adjust distance from arrow */
+    left: 50%; /* Centered horizontally */
+    transform: translateX(-50%);
+    width: 2px; /* Adjust thickness as needed */
+    height: 20px; /* Adjust height as needed */
+    background-color: white; /* Change to a contrasting color */
+}
+
+/* Estrellas*/
+.rating {
+    display: inline-block;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    margin: 0 2px;
+    background-color: #ccc;
+    border-radius: 50%;
+    float: right;
+}
+
+.rating label:before {
+    content: '\2605'; 
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 25px;
+}
+.rating input:checked ~ label {
+    background-color: #ebe709;
+}

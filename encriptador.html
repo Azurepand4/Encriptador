@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="encriptador.css"> 
+    <style>
+        .arrow-down {
+        width: 50;
+        height: 1500;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid white;
+    }
+    
+    </style>
+</head>
+<body>
+    <p><h2>Instrucciones:</h2></p>
+    <p><h2>1.- Ingresa el texto a encriptar dentro del cuadro establecido.</h2></p>
+    <p><h2>2.- Da click en el boton de "Encriptar" o "Desencriptar" segun el caso.</h2></p>
+    <p><h2>3.- Repite el proceso cuantas veces quieras.</h2></p>
+    <p><h2>4.- Califica mi trabajo en la parte inferior</h2></p>
+    <main>
+        <div class="container">
+            <h3>Ingresa tu texto:</h3>
+        <textarea id="myTextarea" name="texto" rows="6" cols="50"placeholder="Ingresa el texto a encriptar o desencriptar aqui..."></textarea></div>
+        <button onclick="encriptarTexto()">Encriptar</button>
+        <button onclick="desencriptarTexto()">Desencriptar</button>
+        <button onclick="clearTextarea()">Limpiar el texto</button>
+
+        <div class="arrow-container">
+            <div class="horizontal-line"></div>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="container">
+            <h2>Texto Encriptado o Desencriptado:</h2>
+            <textarea id="textoResultado" rows="6" cols="50" readonly></textarea>
+        </div>
+    </main>
+    <footer>
+           <!-- ESTRELLAS-->
+        <p>Calificame</p>
+        <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5"></label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4"></label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3"></label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2"></label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1"></label>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
