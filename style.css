@@ -6,7 +6,7 @@ body {
 /* Todo lo relacionado con el primer cuadro de la pagina principal*/
 .titulo{
     width: 100%;
-    height: 200px;
+    height: 12vw;
     background-color: rgb(10, 61, 30);
     color: #fff;
     text-align: center;
@@ -15,132 +15,143 @@ body {
     border-radius: 5px;
     
 }
-h1, h4 {
+h1{
     margin: 0; /* Eliminar completamente los márgenes */
 }
-h2, h3{
-    margin-left: -60%;
+h2{
+    margin-left: 3vw;
+    margin-top: 15vh;
 }
 h3{
-    max-width: 100%; /* o un valor específico en píxeles, porcentaje, etc. */
+    max-width: 100%;
     overflow: hidden;
     white-space: nowrap;
     margin-left: auto;
     margin-right: auto;
 }
-.container {
-    display: flex;
-    height: 100%;
+h4{
+  margin: 1vh;
 }
-
 .box {
     flex: 1;
-    padding: 30px;
-    height: 300px;
-    background-color: #698ca3;
-    color: #fff;
-    text-align: center;
-    border-radius: 5px;
-    margin: 0px;
-    position: absolute;
+    padding: 0px;
+
 
 }
-button{
-    background-color:rgb(48, 109, 150);
-    color: white;
-    width: 505px;
-    height: 30px;
-    padding-left: 70px;
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: -31%;
-}
-/*caja de abajo del footer */
 #box1 {
-    background-image: linear-gradient(to right, rgb(33, 114, 87), rgb(89, 228, 198));
-    color: rgb(14, 12, 12);
-    position: absolute;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    margin-left: 0%;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, rgb(33, 114, 87), rgb(89, 228, 198));
+  color: rgb(14, 12, 12);
+  position: absolute;
+  max-width: 50%;
+  width: 100%;
+  height: 100%;
+  margin-left: 0%;
+}
+#box2 {
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right, rgb(33, 114, 87), rgb(89, 228, 198));
+  color: rgb(14, 12, 12);
+  position: absolute;
+  max-width: 50%;
+  width: 50%;
+  height: 100%;
+  margin-left: 50%;
+}
+.container {
+  display: flex;
+}
+
+/*caja de abajo*/
+button{
+  background-color:rgb(48, 109, 150);
+  color: white;
+  width: 36.9vw;
+  height: 2.3vw;
+  padding-left: 70px;
+  font-size: 22px;
+  margin-top: 0vh;
+  font-family: Arial, Helvetica, sans-serif;
+  text-indent: -31%;
 }
 
 .small-rectangle {
-    width: 504px;
-    height: 30px;
-    margin: 0px;
+    width: 37vw;
+    height: 3vh;
+    margin: 2vw;
     text-align: center;
     line-height: 20px;
     font-size: 19px;
-    position: fixed; /* Set position: absolute; */
+    position: absolute; /* Set position: absolute; */
 }
 
 .small-rectangle:nth-child(1) {
-    top: 0px;
+    top: 4vh;
     left: 0px;
     background-color: rgb(48, 109, 150);
-    position: relative;
+    position: absolute;
+    width: 37vw;
 }
 
 .small-rectangle:nth-child(2) {
-    top: 1px;
+    top: 7.4vh;
     left: 0px;
     background-color: #0a0a0a;
-    position: relative;
+    position: absolute;
+    width: 37vw;
 }
 
 .small-rectangle:hover {
-    transform: scale(1.1); /* Slight highlight on hover */
+    transform: scale(1.1); /* Cambia al pasar el mouse */
 }
 
 .linkedin-link {
-    color: black; /* Change this color code to the desired color for the link */
-    text-decoration: none; /* Remove underlining, if you prefer */
+    color: black; /* Color original antes del hover */
+    text-decoration: none; 
 }
 
 .linkedin-link:hover {
-    color: #e4ce0d; /* Change this color code to the desired color on hover */
+    color: #e4ce0d; /* Color al hacer hover*/
 }
 .small-rectangle img {
     top: 0px;
     left: 40px;
     right: 0px;
-    width: 5%; /* Make the image fill the width of the container */
-    height: auto; /* Maintain the aspect ratio */
-    max-height: 120%; /* Limit the maximum height to 100% of the container */
-    display: block; /* Remove any extra spacing around the image */
-    margin-bottom: 10px; /* Add some spacing between the image and text */
+    width: 5%; 
+    height: auto; 
+    max-height: 120%;
+    display: block; 
+    margin-bottom: 10px; 
     margin-top: 0%;
     position: absolute;
     padding-bottom: 10px;
 }
 
 .parrafo{
-    width: 400px; /* Width of the box */
-    height: 200px; /* Height of the box */
-    padding: 0px; /* Padding inside the box */
-    box-sizing: border-box; /* Include padding and border in the box's total width and height */
+    width: 30vw; 
+    height: 22vh; 
+    padding-left: 4vw; 
+    box-sizing: border-box;
     margin-left: 5%;
-    margin-top: 0%;
+    margin-top: 2vh;
     position: relative;
-    border: 1px solid #000;
+    border: 3px solid #000;
 }
 
 /* Gato */
 .cat-head {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
+    position: relative;
     background: linear-gradient(#5e5e5e 85%, #45454f 100%);
     width: 205px;
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
     text-align: center;
+    margin-left: auto;
+    margin-right: 30vh;
+    margin-top: 5%;
   }
   
   .cat-left-ear {
@@ -327,10 +338,7 @@ button{
     top: 134px;
     left: 109px;}
 
-.cuadroGato {
-        margin: auto;
-        border: 10px solid #000;
-        position: static;
-        margin-left: 50%;
-        padding: 0px;
+     /* media querry*/
+    @media only screen and (max-width: 600px) and (max-height: 600px) and (min-width: 601px) and (min-height: 601px) { 
     }
+    
